@@ -14,12 +14,27 @@ public class PalindromicSubstrings {
 
 	public static void main(String[] args) {
 		PalindromicSubstrings s = new PalindromicSubstrings();
-
+		System.out.println(s.countSubstrings("ababa"));
 	}
 
 	public int countSubstrings(String s) {
-
-		return 0;
+		int res = 0;
+		for (int i = 0, len = s.length(); i < len; i++) {
+			for (int j = i + 1; j <= s.length(); j++) {
+				if (isPalindromic(s, i, j - 1)) {
+					res++;
+				}
+			}
+		}
+		return res;
+	}
+	
+	private boolean isPalindromic(String s, int left, int right) {
+		while (right > left && s.charAt(left) == s.charAt(right)) {
+			left++; 
+			right--;
+		}
+		return right <= left;
 	}
 
 }
