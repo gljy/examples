@@ -1,4 +1,4 @@
-package leetcode.dynamicprogramming.medium;
+package leetcode.dp.medium;
 
 import java.util.Arrays;
 

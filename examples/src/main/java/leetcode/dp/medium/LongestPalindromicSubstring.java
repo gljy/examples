@@ -1,4 +1,4 @@
-package leetcode.dynamicprogramming.medium;
+package leetcode.dp.medium;
 
 /**
  * Given a string s, find the longest palindromic substring in s. You may assume

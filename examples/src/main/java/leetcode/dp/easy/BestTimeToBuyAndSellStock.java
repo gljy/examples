@@ -1,4 +1,4 @@
-package leetcode.dynamicprogramming.easy;
+package leetcode.dp.easy;
 
 /**
  * Say you have an array for which the ith element is the price of a given stock

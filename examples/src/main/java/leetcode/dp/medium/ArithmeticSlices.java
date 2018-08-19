@@ -1,4 +1,4 @@
-package leetcode.dynamicprogramming.medium;
+package leetcode.dp.medium;
 
 /**
  * A sequence of number is called arithmetic if it consists of at least three

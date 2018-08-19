@@ -1,4 +1,4 @@
-package leetcode.dynamicprogramming.easy;
+package leetcode.dp.easy;
 
 /**
  * Given an integer array nums, find the sum of the elements between indices i

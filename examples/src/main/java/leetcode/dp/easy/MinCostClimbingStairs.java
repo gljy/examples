@@ -1,4 +1,4 @@
-package leetcode.dynamicprogramming.easy;
+package leetcode.dp.easy;
 
 import java.util.Arrays;
 

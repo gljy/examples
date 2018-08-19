@@ -1,4 +1,4 @@
-package leetcode.dynamicprogramming.hard;
+package leetcode.dp.hard;
 
 import java.util.LinkedList;
 

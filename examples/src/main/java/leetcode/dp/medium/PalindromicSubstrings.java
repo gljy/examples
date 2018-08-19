@@ -1,4 +1,4 @@
-package leetcode.dynamicprogramming.medium;
+package leetcode.dp.medium;
 
 /**
  * Given a string, your task is to count how many palindromic substrings in this
