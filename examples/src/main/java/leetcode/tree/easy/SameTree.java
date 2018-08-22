@@ -1,7 +1,5 @@
 package leetcode.tree.easy;
 
-import leetcode.helper.TreeNode;
-
 public class SameTree {
 
 	public static void main(String[] args) {

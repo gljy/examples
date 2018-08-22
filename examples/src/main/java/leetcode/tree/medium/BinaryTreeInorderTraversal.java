@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import leetcode.helper.TreeNode;
-
 public class BinaryTreeInorderTraversal {
 
 	public static void main(String[] args) {
@@ -39,4 +37,13 @@ public class BinaryTreeInorderTraversal {
 		return res;
 	}
 
+}
+
+class TreeNode {
+	int val;
+	TreeNode left;
+	TreeNode right;
+	public TreeNode(int x) { 
+		val = x; 
+	}
 }

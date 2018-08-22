@@ -1,7 +1,5 @@
 package leetcode.tree.easy;
 
-import leetcode.helper.TreeNode;
-
 public class BalancedBinaryTree {
 
 	public static void main(String[] args) {
@@ -33,4 +31,13 @@ public class BalancedBinaryTree {
 		return height;
 	}
 
+}
+
+class TreeNode {
+	int val;
+	TreeNode left;
+	TreeNode right;
+	public TreeNode(int x) { 
+		val = x; 
+	}
 }

@@ -5,8 +5,6 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-import leetcode.helper.TreeNode;
-
 public class BinaryTreeZigzagLevelOrderTraversal {
 
 	public static void main(String[] args) {

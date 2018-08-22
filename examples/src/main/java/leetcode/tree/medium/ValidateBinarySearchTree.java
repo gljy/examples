@@ -2,8 +2,6 @@ package leetcode.tree.medium;
 
 import java.util.Stack;
 
-import leetcode.helper.TreeNode;
-
 public class ValidateBinarySearchTree {
 
 	public static void main(String[] args) {
