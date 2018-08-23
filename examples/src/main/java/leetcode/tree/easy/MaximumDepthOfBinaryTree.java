@@ -1,15 +1,13 @@
 package leetcode.tree.easy;
 
+import common.TreeNode;
+
 public class MaximumDepthOfBinaryTree {
 
 	public static void main(String[] args) {
 		MaximumDepthOfBinaryTree s = new MaximumDepthOfBinaryTree();
-		TreeNode node = new TreeNode(3);
-		node.left = new TreeNode(9);
-		node.right = new TreeNode(20);
-		node.right.left = new TreeNode(15);
-		node.right.right = new TreeNode(7);
-		System.out.println(s.maxDepth(node));
+		TreeNode root = new TreeNode("[3,9,20,null,null,15,7]");
+		System.out.println(s.maxDepth(root));
 	}
 
 	public int maxDepth(TreeNode root) {

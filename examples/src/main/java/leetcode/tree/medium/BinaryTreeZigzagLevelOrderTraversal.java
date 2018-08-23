@@ -5,19 +5,14 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
+import common.TreeNode;
+
 public class BinaryTreeZigzagLevelOrderTraversal {
 
 	public static void main(String[] args) {
 		BinaryTreeZigzagLevelOrderTraversal s = new BinaryTreeZigzagLevelOrderTraversal();
-
-		TreeNode node = new TreeNode(3);
-		node.left = new TreeNode(9);
-		node.right = new TreeNode(20);
-		node.right.left = new TreeNode(15);
-		node.right.right = new TreeNode(7);
-		node.right.left.left = new TreeNode(113);
-		node.right.left.right = new TreeNode(114);
-		s.zigzagLevelOrder(node).forEach(System.out::println);
+		TreeNode root = new TreeNode("[3,9,20,null,null,15,7]");
+		s.zigzagLevelOrder(root).forEach(System.out::println);
 	}
 
 	public List<List<Integer>> zigzagLevelOrder(TreeNode root) {

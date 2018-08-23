@@ -1,18 +1,13 @@
 package leetcode.tree.easy;
 
+import common.TreeNode;
+
 public class SymmetricTree {
 
 	public static void main(String[] args) {
 		SymmetricTree s = new SymmetricTree();
-
-		TreeNode node = new TreeNode(1);
-		node.left = new TreeNode(2);
-		node.right = new TreeNode(2);
-		node.left.left = new TreeNode(3);
-		node.left.right = new TreeNode(4);
-		node.right.left = new TreeNode(4);
-		node.right.right = new TreeNode(3);
-		System.out.println(s.isSymmetric(node));
+		TreeNode root = new TreeNode("[1,2,2,3,4,4,3]");
+		System.out.println(s.isSymmetric(root));
 	}
 
 	public boolean isSymmetric(TreeNode root) {

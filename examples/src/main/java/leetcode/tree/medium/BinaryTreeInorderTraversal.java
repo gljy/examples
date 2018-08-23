@@ -4,15 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+import common.TreeNode;
+
 public class BinaryTreeInorderTraversal {
 
 	public static void main(String[] args) {
 		BinaryTreeInorderTraversal s = new BinaryTreeInorderTraversal();
-		TreeNode node = new TreeNode(5);
-		node.left = new TreeNode(1);
-		node.right = new TreeNode(7);
-		node.right.left = new TreeNode(6);
-		System.out.println(s.inorderTraversal(node));
+		TreeNode root = new TreeNode("[5,1,7,null,null,6]");
+		System.out.println(s.inorderTraversal(root));
 	}
 
 	public List<Integer> inorderTraversal(TreeNode root) {
@@ -37,13 +36,4 @@ public class BinaryTreeInorderTraversal {
 		return res;
 	}
 
-}
-
-class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
-	public TreeNode(int x) { 
-		val = x; 
-	}
 }

@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import common.TreeNode;
+
 public class UniqueBinarySearchTreesII {
 
 	public static void main(String[] args) {

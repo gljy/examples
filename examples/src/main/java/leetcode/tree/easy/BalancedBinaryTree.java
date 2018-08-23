@@ -1,15 +1,13 @@
 package leetcode.tree.easy;
 
+import common.TreeNode;
+
 public class BalancedBinaryTree {
 
 	public static void main(String[] args) {
 		BalancedBinaryTree s = new BalancedBinaryTree();
-		TreeNode node = new TreeNode(3);
-		node.left = new TreeNode(9);
-		node.right = new TreeNode(20);
-		node.right.left = new TreeNode(15);
-		node.right.right = new TreeNode(7);
-		System.out.println(s.isBalanced(node));
+		TreeNode root = new TreeNode("[3,9,20,null,null,15,7]");
+		System.out.println(s.isBalanced(root));
 	}
 
 	public boolean isBalanced(TreeNode root) {
@@ -23,21 +21,12 @@ public class BalancedBinaryTree {
 
 	}
 
-	private int height(TreeNode node) {
+	private int height(TreeNode root) {
 		int height = 0;
-		for (; node != null; node = node.left) {
+		for (; root != null; root = root.left) {
 			height++;
 		}
 		return height;
 	}
 
-}
-
-class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
-	public TreeNode(int x) { 
-		val = x; 
-	}
 }

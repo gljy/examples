@@ -1,15 +1,13 @@
 package leetcode.tree.easy;
 
+import common.TreeNode;
+
 public class SameTree {
 
 	public static void main(String[] args) {
 		SameTree s = new SameTree();
-
-		TreeNode node = new TreeNode(5);
-		node.left = new TreeNode(1);
-		node.right = new TreeNode(7);
-		node.right.left = new TreeNode(6);
-		System.out.println(s.isSameTree(node, node));
+		TreeNode root = new TreeNode("[3,9,20,null,null,15,7]");
+		System.out.println(s.isSameTree(root, root));
 	}
 
 	public boolean isSameTree(TreeNode p, TreeNode q) {

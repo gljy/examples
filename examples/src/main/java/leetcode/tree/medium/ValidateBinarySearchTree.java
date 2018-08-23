@@ -2,25 +2,14 @@ package leetcode.tree.medium;
 
 import java.util.Stack;
 
+import common.TreeNode;
+
 public class ValidateBinarySearchTree {
 
 	public static void main(String[] args) {
 		ValidateBinarySearchTree s = new ValidateBinarySearchTree();
-
-		
-		TreeNode node = new TreeNode(5);
-		node.left = new TreeNode(1);
-		node.right = new TreeNode(7);
-		node.right.left = new TreeNode(6);
-		node.right.right = new TreeNode(8);
-		
-		System.out.println(s.isValidBST(node));
-		System.out.println(s.isValidBST(null));
-		
-		node = new TreeNode(2);
-		node.left = new TreeNode(1);
-		node.right = new TreeNode(3);
-		System.out.println(s.isValidBST(node));
+		TreeNode root = new TreeNode("[5,1,7,null,null,6,8]");
+		System.out.println(s.isValidBST(root));
 	}
 
 	public boolean isValidBST(TreeNode root) {
@@ -33,7 +22,6 @@ public class ValidateBinarySearchTree {
 				n = n.left;
 			}
 			n = s.pop();
-			System.out.println(n.val + "\t" + v + "\t" + (v >= n.val));
 			if (v >= n.val) {
 				return false;
 			}
